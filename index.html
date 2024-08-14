@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Spotify Clone</title>
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="left">
+        <div class="top sec">
+          <div class="box">
+            <div class="flex align_center justify_btw">
+              <img class="logo" src="icons/logo_with_name.png" alt="logo" />
+              <img class="close" src="Icons/icons8-cross-30.png" alt="close">
+            </div>
+            <div class="to_home flex align_center">
+              <img class="home pic" src="icons/home_icon.png" alt="home" />
+              <p class="home_text">Home</p>
+            </div>
+          </div>
+        </div>
+        <div class="bottom sec">
+          <div class="library flex align_center justify_btw">
+            <div class="left_lib flex align_center">
+              <div class="lib">
+                <img
+                  class="lib_logo"
+                  src="icons/icons8-music-library-48.png"
+                  alt="library"
+                />
+              </div>
+              <p>Library</p>
+            </div>
+            <div class="right_lib">
+              <img class="add_icon" src="icons/icons8-plus-24.png" alt="add" />
+            </div>
+          </div>
+          <div class="scroll_section">
+            <div class="create_playlist">
+              <p class="heading">Create your first playlist</p>
+              <p class="text">it's easy, we'll help you</p>
+              <button class="button">Create Playlist</button>
+            </div>
+            <div class="browse_podcast">
+              <p class="heading">Lets find some podcasts to follow</p>
+              <p class="text">We'll keep you updated on new episodes</p>
+              <button class="button">Browse Podcasts</button>
+            </div>
+          </div>
+          <div class="terms">
+            <span>Terms</span>
+            <span>Saftey & Privacy Center</span>
+            <span>Privacy Policy</span>
+            <span>About Ads</span>
+            <span>Accessibility</span>
+            <span>Cookies</span>
+          </div>
+          <div class="lang">
+            <button id="btn" class="btn flex justify_center align_center">
+              <img src="icons/icons8-global-48.png" alt="language" />English
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="right sec">
+        <div class="header flex justify_btw align_center">
+          <div class="nav">
+            <ul class="flex justify_btw align_center">
+              <li>
+                <img
+                  class="ham_btn"
+                  src="Icons/icons8-hamburger-50.png"
+                  alt="Menu"
+                />
+              </li>
+              <li>
+                <img
+                  class="nav_btn"
+                  src="icons/icons8-greater-than-50_invert.png"
+                  alt="Back"
+                />
+              </li>
+              <li>
+                <img
+                  class="nav_btn"
+                  src="icons/icons8-greater-than-50.png"
+                  alt="Next"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="account flex justify_btw align_center">
+            <button class="Sign_up">Sign up</button>
+            <button class="Log_in">Log in</button>
+          </div>
+        </div>
+        <div class="main">
+          <div class="Spotify_playlist">
+            <h1>Spotify  Songs</h1>
+            <div class="card_container">
+            </div>
+          </div>
+        </div>
+        <div class="playBox">
+          <div class="upper">
+            <div class="songInfo">Song Name - Artist</div>
+            <div class="controls flex justify_center align_center">
+              <img class="prev" src="Icons/icons8-previous-48.png" alt="previous">
+              <img class="play" src="Icons/icons8-play-64.png" alt="play">
+              <img class="next" src="Icons/icons8-next-48.png" alt="next">
+            </div>
+            <div class="songTime">00:00 / 00:00</div>
+          </div>
+          <div class="seekBar"></div>
+          <div class="pointer"></div>
+        </div>
+      </div>
+    </div>
+    <script src="code.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
